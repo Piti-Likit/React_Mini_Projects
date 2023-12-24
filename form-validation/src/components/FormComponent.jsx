@@ -41,6 +41,7 @@ const FormComponent = () => {
             setErrorPassword('Please enter 8-letter password')
             setPasswordColor('red')
         }
+        // be careful!!!  "" is not the same as " "
         if (confirmedPassword != "" && confirmedPassword === password) {
             setErrorConfirmedPassword('')
             setConfirmedPasswordColor('green')
