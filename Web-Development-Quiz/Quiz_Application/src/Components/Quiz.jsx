@@ -3,10 +3,10 @@ import QuestionsData from "../data/QuestionsData"
 import { DataContext } from "../App"
 
 const Quiz = () => {
-    // console.log(QuestionsData)
+
     const [current, setCurrent] = useState(0)
     const [select, setSelect] = useState("")
-    const {score, setScore} = useContext(DataContext)
+    const {score, setScore, setAppState} = useContext(DataContext)
 
     useEffect(()=>{
         checkAnswer()
@@ -16,11 +16,21 @@ const checkAnswer=()=>{
     if (select !== ""){
         if (select === QuestionsData[current].answer){
             setScore(score+1)
+            nextQuestion()
         }else{
-            console.log ("Incorrect Answer")
+            nextQuestion()
         }
     }
 }
+
+    const nextQuestion = () => {
+        setSelect("")
+        if (current === QuestionsData.length-1) {  //current from index 0 to 4
+            setAppState("score")
+        }else{
+            setCurrent(current+1)
+        }
+    }
 
     return(
     <div className="Quiz">
