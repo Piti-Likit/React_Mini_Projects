@@ -1,5 +1,5 @@
 body {
-  /* padding && margin 0 mean no space at the edge */
+  /* padding && margin 0 mean no space at the edge*/
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -9,9 +9,9 @@ header, main {
   font-size: 2rem;
   font-weight: 700;
   padding: 3.4rem;
-  /*  */
+  /*display:flex usually comes together with justify-content*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*This separates "Mode" and React-Switch*/
 }
 
 header {
