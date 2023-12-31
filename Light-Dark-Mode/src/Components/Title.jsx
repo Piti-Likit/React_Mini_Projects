@@ -6,12 +6,14 @@ const Title = () => {
     const {theme, setTheme} = useContext(ThemeContext)
 
     const toggleSwitch = (checked) => {
-        setTheme(checked)
+        setTheme(
+            theme === "light" ? "dark" : "light"  //ternary operator
+        )
     }
     return(
-        <header>
+        <header className={theme==="dark"?"dark":"light"}>
             <span>Mode [{theme}]</span>
-            <ReactSwitch onChange={toggleSwitch} checked = {theme} />
+            <ReactSwitch onChange={toggleSwitch} checked = {theme==="dark"} />
         </header>
     )
 }
