@@ -39,3 +39,13 @@ header.dark {
   color: orange;
   
 }
+
+main.dark {
+  background-color: #121213;
+  color: white;
+}
+
+main.dark p {
+  color: orange;
+}
+
