@@ -13,6 +13,11 @@ const data = [
         id:3,
         title:"Bootstrap",
         description:`Frontend Framework ที่รวม HTML, CSS และ JS เข้าด้วยกันเป็นชุดคำสั่งที่ถูกพัฒนาขึ้นมาเพื่อกำหนดมาตรฐานหรือรูปแบบการพัฒนาเว็บไซต์ในส่วนของ User Interface (UI) และทำให้เว็บรองรับการแสดงผลขนาดหน้าจอที่แตกต่างกันอีกด้วย สรุปก็คือ CSS Framework `    
+    },
+    {
+        id:4,
+        title:"CSS3",
+        description:`For website decoration`    
     }
 ]
 
